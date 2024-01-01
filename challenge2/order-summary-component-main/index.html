@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paleBlue: 'hsl(225, 100%, 94%)',
+            brightBlue: 'hsl(245, 75%, 52%)',
+            veryPaleBlue: "hsl(225, 100%, 98%)",
+            desaturatedBlue: 'hsl(224, 23%, 55%)',
+            darkBlue: 'hsl(223, 47%, 23%)'
+          },
+          fontFamily: {
+            inter: ['Red Hat Display'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+</head>
+
+<body>
+  <div
+    class="flex h-screen flex-col  bg-paleBlue flex-col gap-20 justify-center items-center bg-cover bg-center font-[Red-Hat-Display] bg-[url(./images/pattern-background-mobile.svg)] sm:bg-[url(./images/pattern-background-desktop.svg)]"
+    style="">
+
+    <div class=" w-[300px] flex flex-col bg-white rounded-xl">
+      <div>
+        <img src="./images/illustration-hero.svg" class="rounded-xl" />
+      </div>
+      <div class="flex flex-col gap-5 p-5 items-center ">
+        <p class="text-3xl font-bold tracking-tighter	">Order Summary</p>
+        <p class="w-[255px] text-gray-600 text-md">You can now listen to millions of songs, audiobooks, and podcasts on
+          any
+          device anywhere you like!</p>
+        <div class="flex justify-between items-center w-[255px] bg-veryPaleBlue p-5 rounded-lg">
+          <div class="flex gap-2">
+            <img src="images/icon-music.svg" />
+            <div>
+              <p class="font-bold">Annual Plan</p>
+              <p class="text-gray-500">$59.99/year</p>
+            </div>
+          </div>
+          <a href="#" class="font-bold text-brightBlue underline hover:text-brightBlue/50 hover:no-underline">Change</a>
+        </div>
+        <button
+          class=" bg-brightBlue hover:bg-brightBlue/50 text-white font-bold py-2 px-4 rounded-lg shadow-lg shadow-brightBlue/50 hover:shadow-xl w-[255px]">Proceed
+          to
+          Payment</button>
+        <button class=" text-gray-500 font-bold hover:text-darkBlue">Cancel Order</button>
+      </div>
+    </div>
+
+
+    <div class="">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">famo</a>.
+    </div>
+  </div>
+</body>
+
+</html>
