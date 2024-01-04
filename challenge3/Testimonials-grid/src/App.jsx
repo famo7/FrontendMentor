@@ -2,7 +2,7 @@ import Testimonials from './components/Testimonials';
 
 function App() {
   return (
-    <div className="bg-gray-200 flex flex-col items-center sm:items-start gap-10 sm:gap-5 sm:grid sm:grid-cols-4 sm:grid-rows-[auto_minmax(0,1fr)] sm:h-screen ">
+    <div className="bg-slate-200 flex flex-col items-center sm:items-start gap-10 sm:gap-5 sm:grid sm:grid-cols-4 sm:grid-rows-[auto_minmax(0,1fr)] sm:h-screen ">
       <div className="sm:col-span-2">
         <Testimonials
           name="Daniel Clifford"
