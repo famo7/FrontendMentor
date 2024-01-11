@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    src: url("../fonts/Roboto-Regular.ttf");
+
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    src: url("../fonts/Roboto-Bold.ttf");
+  }
+
+  :root {
+    --background: 240 60% 99%;
+    --foreground: 235 18% 26%;
+    --card: 240 60% 99%;
+    --card-foreground: 235 18% 26%;
+    --popover: 240 60% 99%;
+    --popover-foreground: 235 18% 26%;
+    --primary: 234 29% 20%;
+    --primary-foreground: 240 60% 99%;
+    --secondary: 234 29% 20%;
+    --secondary-foreground: 240 60% 99%;
+    --muted: 240 61% 20%;
+    --muted-foreground: 236 18% 70%;
+    --accent: 4 100% 67%;
+    --accent-foreground: 240 60% 99%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 235 18% 26%;
+    --border: 240 61% 20%;
+    --input: 240 61% 20%;
+    --ring: 4 100% 40%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 60% 1%;
+    --foreground: 235 18% 74%;
+    --card: 240 60% 1%;
+    --card-foreground: 235 18% 74%;
+    --popover: 240 60% 1%;
+    --popover-foreground: 235 18% 74%;
+    --primary: 234 29% 80%;
+    --primary-foreground: 240 60% 1%;
+    --secondary: 234 29% 80%;
+    --secondary-foreground: 240 60% 1%;
+    --muted: 240 61% 80%;
+    --muted-foreground: 235 18% 74%;
+    --accent: 4 100% 33%;
+    --accent-foreground: 240 60% 1%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 233 18% 10%;
+    --border: 240 60% 60%;
+    --input: 240 61% 80%;
+    --ring: 4 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
